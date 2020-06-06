@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Employee from './components/employee';
+// import EmployeeList from './components/employeeList';
+import "bootstrap/dist/css/bootstrap.css"
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <Employee />
+
   </React.StrictMode>,
   document.getElementById('root')
 );
