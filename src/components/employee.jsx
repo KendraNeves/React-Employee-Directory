@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { getLaureates } from "../peopleDataset.js";
+import { getLaureates } from "../service/employeeDataset.js";
 
 class Employee extends Component {
   state = {
@@ -27,7 +27,7 @@ class Employee extends Component {
                 <td>{laureate.firstname}</td>
                 <td>{laureate.surname}</td>
                 <td>{laureate.origin}</td>
-                <td>{laureate.field}</td>
+                <td>{laureate.field.name}</td>
                 <td></td>
               </tr>
             ))}

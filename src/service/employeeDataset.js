@@ -4,15 +4,14 @@ const laureates = [
     "firstname": "Wilhelm Conrad",
     "surname": "Röntgen",
     "origin": "Germany",
-    "field": "physics"
-
+    "field": { _id: "a", name: "Physics" }
   },
   {
     "id": "2",
     "firstname": "Hendrik A.",
     "surname": "Lorentz",
     "origin": "Netherlands",
-    "field": "physics",
+    "field": { _id: "a", name: "Physics" }
 
   },
   {
@@ -20,7 +19,7 @@ const laureates = [
     "firstname": "Pieter",
     "surname": "Zeeman",
     "origin": "Netherlands",
-    "field": "physics",
+    "field": { _id: "a", name: "Physics" },
     "year": "1902"
   },
   {
@@ -28,7 +27,7 @@ const laureates = [
     "firstname": "Henri",
     "surname": "Becquerel",
     "origin": "France",
-    "field": "physics",
+    "field": { _id: "a", name: "Physics" },
     "year": "1903"
   },
   {
@@ -36,7 +35,7 @@ const laureates = [
     "firstname": "Pierre",
     "surname": "Curie",
     "origin": "France",
-    "field": "physics",
+    "field": { _id: "a", name: "Physics" },
     "year": "1903"
   },
   {
@@ -44,7 +43,7 @@ const laureates = [
     "firstname": "Jacobus H.",
     "surname": "van 't Hoff",
     "origin": "Germany",
-    "field": "chemistry",
+    "field": { _id: "b", name: "Chemistry" },
     "year": "1901"
   },
   {
@@ -52,7 +51,7 @@ const laureates = [
     "firstname": "Charles",
     "surname": "Richet",
     "origin": "France",
-    "field": "medicine",
+    "field": { _id: "c", name: "Medicine" },
     "year": "1913"
   },
 
