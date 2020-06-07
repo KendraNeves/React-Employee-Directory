@@ -25,17 +25,17 @@ class EmployeeList extends Component {
   render() {
     return (
       <div className="row">
-        <div className="col-12 col-md-2">
+        <div className="col-12 col-md-2 text-center">
           <ListGroup
             fields={this.state.fields}
             onItemSelect={this.handleFieldSelect}
           />
         </div>
-        <div className="col-12 col-md-10">
+        <div className="col-md-1"></div>
+        <div className="col-12 col-md-6">
           <table className="table">
             <thead>
               <tr>
-                <th>Photo</th>
                 <th>
                   First Name
                   <button
@@ -88,7 +88,6 @@ class EmployeeList extends Component {
                 })
                 .map((laureate) => (
                   <tr key={laureate.id}>
-                    <td>{laureate.photo}</td>
                     <td>{laureate.firstname}</td>
                     <td>{laureate.surname}</td>
                     <td>{laureate.origin}</td>
@@ -99,6 +98,7 @@ class EmployeeList extends Component {
             </tbody>
           </table>
         </div>
+        <div className="col-md-3"></div>
       </div>
     );
   }
