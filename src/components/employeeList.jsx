@@ -2,12 +2,14 @@ import React, { Component } from "react";
 import { getLaureates } from "../service/employeeDataset.js";
 import { getFields } from "../service/fieldDataset";
 import ListGroup from "./listGroup";
+import _ from "lodash";
 
 class EmployeeList extends Component {
   state = {
     laureates: getLaureates(),
     fields: getFields(),
     selectedField: null,
+    sortColumn: { path: "title", order: "asc" },
   };
 
   handleFieldSelect = (field) => {
@@ -46,6 +48,16 @@ class EmployeeList extends Component {
                   } else {
                     return false;
                   }
+                })
+                .sort((a, b) => {
+                  if (a.firstname < b.firstname) {
+                    return -1;
+                  }
+                  if (a.firstname > b.firstname) {
+                    return 1;
+                  }
+                  // a must be equal to b
+                  return 0;
                 })
                 .map((laureate) => (
                   <tr key={laureate.id}>

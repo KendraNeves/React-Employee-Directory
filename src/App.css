@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  /* background-image: url(./noodles-dropping.jpg); */
+  background-position: left;
+  background-size: cover;
+}
