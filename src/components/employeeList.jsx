@@ -9,11 +9,17 @@ class EmployeeList extends Component {
     laureates: getLaureates(),
     fields: getFields(),
     selectedField: null,
-    sortColumn: { path: "title", order: "asc" },
+    sortColumn: "id",
   };
 
   handleFieldSelect = (field) => {
     this.setState({ selectedField: field });
+  };
+
+  handleSort = () => {
+    var sortItem = this.state.sortColumn === "id" ? "firstname" : "id";
+
+    this.setState({ sortColumn: sortItem });
   };
 
   render() {
@@ -30,7 +36,17 @@ class EmployeeList extends Component {
             <thead>
               <tr>
                 <th>Photo</th>
-                <th>First Name</th>
+                <th>
+                  First Name
+                  <button
+                    className="btn btn-primary btn-sm ml-3"
+                    onClick={() => {
+                      this.handleSort("firstname");
+                    }}
+                  >
+                    Sort
+                  </button>
+                </th>
                 <th>Surname</th>
                 <th>Origin</th>
                 <th>Field</th>
@@ -50,14 +66,25 @@ class EmployeeList extends Component {
                   }
                 })
                 .sort((a, b) => {
-                  if (a.firstname < b.firstname) {
-                    return -1;
+                  if (this.state.sortColumn === "id") {
+                    if (a.id < b.id) {
+                      return -1;
+                    }
+                    if (a.id > b.id) {
+                      return 1;
+                    }
+                    // a must be equal to b
+                    return 0;
+                  } else if (this.state.sortColumn === "firstname") {
+                    if (a.firstname < b.firstname) {
+                      return -1;
+                    }
+                    if (a.firstname > b.firstname) {
+                      return 1;
+                    }
+                    // a must be equal to b
+                    return 0;
                   }
-                  if (a.firstname > b.firstname) {
-                    return 1;
-                  }
-                  // a must be equal to b
-                  return 0;
                 })
                 .map((laureate) => (
                   <tr key={laureate.id}>
