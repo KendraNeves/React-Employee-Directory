@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/React-Employee-Directory/static/css/main.34919416.chunk.css",
+    "main.js": "/React-Employee-Directory/static/js/main.5d659059.chunk.js",
+    "main.js.map": "/React-Employee-Directory/static/js/main.5d659059.chunk.js.map",
+    "runtime-main.js": "/React-Employee-Directory/static/js/runtime-main.9e2f96fa.js",
+    "runtime-main.js.map": "/React-Employee-Directory/static/js/runtime-main.9e2f96fa.js.map",
+    "static/css/2.829c9cb5.chunk.css": "/React-Employee-Directory/static/css/2.829c9cb5.chunk.css",
+    "static/js/2.ac825e88.chunk.js": "/React-Employee-Directory/static/js/2.ac825e88.chunk.js",
+    "static/js/2.ac825e88.chunk.js.map": "/React-Employee-Directory/static/js/2.ac825e88.chunk.js.map",
+    "index.html": "/React-Employee-Directory/index.html",
+    "precache-manifest.5eedcd38b516368f5c5242c3a212b9c9.js": "/React-Employee-Directory/precache-manifest.5eedcd38b516368f5c5242c3a212b9c9.js",
+    "service-worker.js": "/React-Employee-Directory/service-worker.js",
+    "static/css/2.829c9cb5.chunk.css.map": "/React-Employee-Directory/static/css/2.829c9cb5.chunk.css.map",
+    "static/css/main.34919416.chunk.css.map": "/React-Employee-Directory/static/css/main.34919416.chunk.css.map",
+    "static/js/2.ac825e88.chunk.js.LICENSE.txt": "/React-Employee-Directory/static/js/2.ac825e88.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/React-Employee-Directory/static/media/yellow-pasta-spaghetti-eat-42326.0266ddc5.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9e2f96fa.js",
+    "static/css/2.829c9cb5.chunk.css",
+    "static/js/2.ac825e88.chunk.js",
+    "static/css/main.34919416.chunk.css",
+    "static/js/main.5d659059.chunk.js"
+  ]
+}
