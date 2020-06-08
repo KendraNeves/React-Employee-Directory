@@ -4,7 +4,7 @@ function ListGroup(props) {
   return (
     <ul className="list-group">
       <li
-        className="list-group-item"
+        className="list-group-item bg-transparent"
         onClick={() => {
           props.onItemSelect(null);
         }}
@@ -14,7 +14,7 @@ function ListGroup(props) {
       {props.fields.map((field) => {
         return (
           <li
-            className="list-group-item"
+            className="list-group-item bg-transparent"
             onClick={() => {
               props.onItemSelect(field._id);
             }}

@@ -39,7 +39,7 @@ class EmployeeList extends Component {
                 <th>
                   First Name
                   <button
-                    className="btn btn-primary btn-sm ml-3"
+                    className="btn btn-secondary btn-sm ml-3"
                     onClick={() => {
                       this.handleSort("firstname");
                     }}

@@ -39,7 +39,24 @@
 
 body {
   background-image: url(./yellow-pasta-spaghetti-eat-42326.jpg);
-  background-position: right;
   background-size: cover;
-  backdrop-filter: sepia(0.4);
+  background-repeat: no-repeat;
+  backdrop-filter: grayscale(1);
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 800 !important;
+  font-size: 1.25rem;
+}
+
+.list-group-item {
+  border: #fff solid 1px !important;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 5rem !important;
+}
+
+thead {
+  color: #800000;
+  font-size: 1.3rem;
 }
